@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     int i; 
     
     //1. open file
-    fp = fopen("sample.txt", "W"); //두가지 입력 필요. 이름이랑 mode
+    fp = fopen("C:/Users/dltld/Documents/sample.txt", "w"); //두가지 입력 필요. 이름이랑 mode
     
     //2. write file
     for(i=0; i<3; i++)
