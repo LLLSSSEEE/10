@@ -3,13 +3,23 @@
 
 int main(int argc, char *argv[])
 {
-  char code1 = 'A';
-  int code2 = 65;
-  
-  printf("code1 = %c, (%d)\n", code1, code1); // 하나는 문자형태로, 하나는 값 그대로 출력 
-  printf("code2 = %c, (%d)\n", code2, code2);
-  
-  // 문자로 저장을 하나, 값을 저장을 하나 똑같은 결과를 얻을 수 있다. 
+    
+    int i=0;
+    char str[4];
+    
+    str[0] = 'a';
+    str[1] = 'b';
+    str[2] = 'c';
+    str[3] = '\0';
+    
+    printf("%s\n", str); 
+    
+    while( str[i] != '\0' ) //i는 0부터 증가하는 변수. 반복문이 지나갈 수록 글자 하나하나를 대조한다고 생각.
+    // 문자열이 맨 끝(null문자)에 도달하지 않을 때까지 반복을 한다.  
+    {
+        printf("%c", str[i]);
+        i++;
+    }
    
   system("PAUSE");	
   return 0;
