@@ -1,25 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 int main(int argc, char *argv[])
 {
+    char src[] = "The worst things to eat before you sleep.";
+    char dst[100]; //source의 내용을 destination에 복사하는 코드를 아래에 적어야 한다. 
     
-    int i=0;
-    char str[4];
+    strcpy(dst, src); //dst 자리에 배열의 이름만 넣으면 된다.  
     
-    str[0] = 'a';
-    str[1] = 'b';
-    str[2] = 'c';
-    str[3] = '\0';
-    
-    printf("%s\n", str); 
-    
-    while( str[i] != '\0' ) //i는 0부터 증가하는 변수. 반복문이 지나갈 수록 글자 하나하나를 대조한다고 생각.
-    // 문자열이 맨 끝(null문자)에 도달하지 않을 때까지 반복을 한다.  
-    {
-        printf("%c", str[i]);
-        i++;
-    }
+    printf("copied string : %s\n", dst); 
    
   system("PAUSE");	
   return 0;
